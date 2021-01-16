@@ -1,0 +1,17 @@
+﻿<UserControl x:Class="Frontend.Views.SavedSessionsListView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Frontend.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Label Content="Saved sessions" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="0"/>
+        <ListBox ItemsSource="{Binding SavedSessionsList}" BorderThickness="1" BorderBrush="Black" Grid.Row="1" Margin="10"/>
+    </Grid>
+</UserControl>
